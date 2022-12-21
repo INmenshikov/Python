@@ -11,5 +11,9 @@ def generating_bunch_random_number(a,b,c):
     while len(bun) < c:
         g = random.randint(a,b)
         print(g)
-        bun.add(g)     
+        bun.add(str(g))   
     return bun
+
+my_list = generating_bunch_random_number(0,10,10)
+my_list.add(45)
+print(my_list)
