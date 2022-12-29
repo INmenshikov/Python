@@ -1,5 +1,5 @@
 import random
-
+import controller
 def generating_sheet_random_numbers(a,b,c):
     lst = []
     for i in range(c):
@@ -45,7 +45,7 @@ def exponent_str(exponent):
             else:
                 polynomial_ctr += f'{r_namber*(-1)}*x**{exponent}'
                 if exponent > 1:
-                    polynomial_ctr += ' + '
+                    polynomial_ctr += ' - '
                 exponent -= 1
         polynomial_ctr += ' = 0'
     return polynomial_ctr

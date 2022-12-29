@@ -1,4 +1,3 @@
-import random
 import Functions
 import controller 
 def create_file (c,d):
