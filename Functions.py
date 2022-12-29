@@ -10,10 +10,15 @@ def generating_bunch_random_number(a,b,c):
     bun = set()
     while len(bun) < c:
         g = random.randint(a,b)
-        print(g)
         bun.add(str(g))   
     return bun
 
-my_list = generating_bunch_random_number(0,10,10)
-my_list.add(45)
-print(my_list)
+
+def fibonacci(n):
+    if  n == 0:
+        return 0
+    if n in (1, 2):
+        return 1
+    if n < 0:
+        return (-1) ** (-n + 1) * fibonacci(-n)
+    return fibonacci(n - 1) + fibonacci(n - 2)
