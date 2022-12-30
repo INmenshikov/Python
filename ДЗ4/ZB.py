@@ -18,6 +18,7 @@ print(str_b)
 
 def str_replace(str_1):
     str_1 = str_1.replace(' ','').replace('-','+-').replace('**2','').replace('*','').replace('x','').replace('=0','').split('+')
+    print(str_1)
     a = int(str_1[0])
     b = int(str_1[1])
     c = int(str_1[2])
