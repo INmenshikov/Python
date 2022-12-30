@@ -1,5 +1,8 @@
 import random
 import controller
+import math
+
+    
 def generating_sheet_random_numbers(a,b,c):
     lst = []
     for i in range(c):
