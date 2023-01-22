@@ -2,7 +2,14 @@
 # Пример:
 # Для n=4 -> [2, 2.25, 2.37, 2.44]
 # Сумма 9.06
-def lis_nam(nam):
+
+namber = int(input("Введите число: "))
+my_list = [round((1 + 1/i) ** i,2) for i in range(1, namber + 1)]
+
+print(f'Для n = {namber} -> {my_list}')
+print(f'Сумма {sum(my_list)}')
+exit()
+def lis_nam(nam):     #было
     a = 0
     for i in range(1, nam + 1):
         a = (1 + 1/i) ** i

@@ -33,7 +33,7 @@ if bot_ != "один":
         if r_nam == 1:
             number_candies = int(input(f"Сколько конфет берет {player_1}? "))
             if number_candies > 28:
-                print("Не больше 28 когфет за раз. Не хорошо нарушать правила ")
+                print("Не больше 28 конфет за раз. Не хорошо нарушать правила ")
                 number_candies = int(input(f"Сколько конфет берет {player_1}? "))
             general_candies = general_candies - number_candies
             print(f"Конфет осталось {general_candies}")
@@ -41,7 +41,7 @@ if bot_ != "один":
         else:
             number_candies = int(input(f"Сколько конфет берет {player_2}? "))
             if number_candies > 28:
-                print("Не больше 28 когфет за раз. Не хорошо нарушать правила ")
+                print("Не больше 28 конфет за раз. Не хорошо нарушать правила ")
                 number_candies = int(input(f"Сколько конфет берет {player_2}? "))
             general_candies = general_candies - number_candies
             number_candies = 0
